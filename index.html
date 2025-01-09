@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
-    <title>Dashboard</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/output.css">
+        <title>Dashboard</title>
+    </head>
+    <body class="flex">
+        <!-- Side bar -->
+        <section
+            class="flex-none w-20 border-r h-full flex flex-col items-center pt-2">
+            <div name="logo"
+                class="bg-indigo-600 text-white rounded-full flex items-center justify-center w-12 h-12  mb-16">
+                <p class=" font-bold text-2xl">LK</p>
+            </div>
+            <div name="nav_icons" class="flex flex-col items-center gap-y-12 mb-24">
+                <a href>
+                    <svg class="h-8 w-8 text-gray-500" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"> <path
+                            d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                </a>
+                <a href>
+                    <svg class="h-8 w-8 text-gray-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                    </svg>
+                </a>
+                <a href>
+                    <svg class="h-8 w-8 text-gray-500" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round"> <path stroke="none"
+                            d="M0 0h24v24H0z" /> <line x1="3" y1="4" x2="21"
+                            y2="4" /> <path
+                            d="M4 4v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-10" />
+                        <line x1="12" y1="16" x2="12" y2="20" /> <line x1="9"
+                            y1="20" x2="15" y2="20" /> <path
+                            d="M8 12l3 -3l2 2l3 -3" />
+                    </svg>
+                </a>
+                <a href>
+                    <svg class="h-8 w-8 text-gray-500" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"> <path
+                            d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+                    </svg>
+                </a>
+                <a href>
+                    <svg class="h-8 w-8 text-gray-500" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round"> <path stroke="none"
+                            d="M0 0h24v24H0z" /> <path
+                            d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+                        <path
+                            d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+                    </svg>
+                </a>
+                <a href>
+                    <svg class="w-8 h-8 text-gray-500"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="M4.248 19C3.22 15.77 5.275 8.232 12.466 8.232V6.079a1.025 1.025 0 0 1 1.644-.862l5.479 4.307a1.108 1.108 0 0 1 0 1.723l-5.48 4.307a1.026 1.026 0 0 1-1.643-.861v-2.154C5.275 13.616 4.248 19 4.248 19Z" />
+                    </svg>
+
+                </a>
+            </div>
+            <div class="flex flex-col items-center gap-y-12 mb-8">
+                <button>
+                    <svg class="h-8 w-8 text-gray-500" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round"> <path stroke="none"
+                            d="M0 0h24v24H0z" /> <path
+                            d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                        <path d="M7 12h14l-3 -3m0 6l3 -3" />
+                    </svg>
+                </button>
+                <label class="inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value class="sr-only peer">
+                    <div
+                        class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                    </div>
+                </label>
+            </div>
+        </section>
+        <!-- Main section -->
+        <main class="flex-auto flex-grow">
+            <nav class="mt-2 flex justify-end pr-4">
+                <div class="flex-1 flex items-center justify-end gap-x-10 ml-12">
+                    <div class="flex  items-center gap-x-4 border h-full rounded-lg">
+                        <svg class="h-8 w-8 text-gray-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="11" cy="11" r="8" />  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                        <input type="search" placeholder="Search here...">
+                    </div>
+                    <div class="w-16 h-16">
+                        <img src="src/images/admin_profile.jpg" alt="" class="rounded-full">
+                    </div>
+                </div>
+            </nav>
+            <div></div>
+            <div></div>
+        </main>
+    </body>
 </html>
