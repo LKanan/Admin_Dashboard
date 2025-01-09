@@ -788,6 +788,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -845,6 +850,11 @@ video {
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.hover\:outline-none:hover {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .peer:checked ~ .peer-checked\:bg-blue-600 {
