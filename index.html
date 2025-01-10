@@ -9,7 +9,7 @@
     <body class="flex">
         <!-- Side bar -->
         <section
-            class="flex-none w-20 border-r h-full flex flex-col items-center pt-2">
+            class="flex-none w-20 border-r flex flex-col items-center pt-2">
             <div name="logo"
                 class="bg-indigo-600 text-white rounded-full flex items-center justify-center w-12 h-12  mb-16">
                 <p class=" font-bold text-2xl">LK</p>
@@ -115,7 +115,7 @@
                 </div>
             </nav>
             <section class="px-8">
-                <div>
+                <div class="grid grid-cols-1">
                     <div class="flex items-center gap-x-4 pt-20">
                         <div class="bg-blue-700 p-2 rounded-lg">
                             <svg class="h-8 w-8 text-white" width="24"
@@ -163,19 +163,71 @@
                         </div>
                         <div
                             class="bg-violet-200 flex flex-col py-6 justify-center items-center rounded-xl">
-                    <svg class="w-8 h-8 text-black"
-                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2"
-                        d="M4.248 19C3.22 15.77 5.275 8.232 12.466 8.232V6.079a1.025 1.025 0 0 1 1.644-.862l5.479 4.307a1.108 1.108 0 0 1 0 1.723l-5.48 4.307a1.026 1.026 0 0 1-1.643-.861v-2.154C5.275 13.616 4.248 19 4.248 19Z" />
-                </svg>
+                            <svg class="w-8 h-8 text-black"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M4.248 19C3.22 15.77 5.275 8.232 12.466 8.232V6.079a1.025 1.025 0 0 1 1.644-.862l5.479 4.307a1.108 1.108 0 0 1 0 1.723l-5.48 4.307a1.026 1.026 0 0 1-1.643-.861v-2.154C5.275 13.616 4.248 19 4.248 19Z" />
+                            </svg>
                             <p class="font-bold text-xl">Total Share</p>
                             <p class="font-bold text-5xl">10,320</p>
                         </div>
                     </div>
+                <div class="flex flex-col">
+                    <div class="flex items-center gap-x-4 pt-20">
+                        <div class="bg-blue-700 p-2 rounded-lg">
+                            <svg class="h-8 w-8 text-white"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" /> <polyline
+                                    points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <h1 class="font-bold text-3xl">Recent Activity</h1>
+                    </div>
+                    <div class="overflow-x-auto flex">
+                        <table class="table-auto shrink-0 w-full text-left rounded-lg mt-10">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 ">
+                                <tr>
+                                    <th class="py-3 px-6">Name</th>
+                                    <th class="py-3 px-6">Email</th>
+                                    <th class="py-3 px-6">Joined</th>
+                                    <th class="py-3 px-6">Type</th>
+                                    <th class="py-3 px-6">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td class="py-3 px-6  whitespace-nowrap">Witchy Woman</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">The Eagles</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">1972</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">Witchy Woman</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">The Eagles</td>
+                                </tr>
+                                <tr>
+                                  <td class="py-3 px-6  whitespace-nowrap">Witchy Woman</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">The Eagles</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">1972</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">Witchy Woman</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">The Eagles</td>
+                                </tr>
+                                <tr>
+                                  <td class="py-3 px-6  whitespace-nowrap">Witchy Woman</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">The Eagles</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">1972</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">Witchy Woman</td>
+                                  <td class="py-3 px-6  whitespace-nowrap">The Eagles</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div></div>
+                </div>
             </section>
         </main>
     </body>
