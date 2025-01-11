@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="src/output.css">
+        <script src="src/index.js" defer></script>
         <title>Dashboard</title>
     </head>
     <body class="flex bg-slate-100">
@@ -16,24 +17,27 @@
             </div>
             <div name="nav_icons"
                 class="flex flex-col items-center gap-y-12 mb-24">
-                <a href>
-                    <svg class="h-8 w-8 text-gray-500" viewBox="0 0 24 24"
+                <a href="" class="nav_icon_link">
+                        <span class="text-5xl opacity-0 icon_dot">⸱</span>
+                    <svg class="nav_icon" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round"> <path
                             d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                         <polyline points="9 22 9 12 15 12 15 22" />
                     </svg>
                 </a>
-                <a href>
-                    <svg class="h-8 w-8 text-gray-500" fill="none"
+                <a href="" class="nav_icon_link">
+                    <span class="text-5xl opacity-0 icon_dot">⸱</span>
+                    <svg class="nav_icon mb-2" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2"
                             d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
                     </svg>
                 </a>
-                <a href>
-                    <svg class="h-8 w-8 text-gray-500" width="24" height="24"
+                <a href="" class="nav_icon_link">
+                    <span class="text-5xl opacity-0 icon_dot">⸱</span>
+                    <svg class="nav_icon" width="24" height="24"
                         viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" fill="none" stroke-linecap="round"
                         stroke-linejoin="round"> <path stroke="none"
@@ -45,15 +49,17 @@
                             d="M8 12l3 -3l2 2l3 -3" />
                     </svg>
                 </a>
-                <a href>
-                    <svg class="h-8 w-8 text-gray-500" viewBox="0 0 24 24"
+                <a href="" class="nav_icon_link">
+                    <span class="text-5xl opacity-0 icon_dot">⸱</span>
+                    <svg class="nav_icon" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round"> <path
                             d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
                     </svg>
                 </a>
-                <a href>
-                    <svg class="h-8 w-8 text-gray-500" width="24" height="24"
+                <a href="" class="nav_icon_link">
+                    <span class="text-5xl opacity-0 icon_dot">⸱</span>
+                    <svg class="nav_icon" width="24" height="24"
                         viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" fill="none" stroke-linecap="round"
                         stroke-linejoin="round"> <path stroke="none"
@@ -63,7 +69,8 @@
                             d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
                     </svg>
                 </a>
-                <a href>
+                <a href="" class="nav_icon_link">
+                    <span class="text-5xl opacity-0 icon_dot">⸱</span>
                     <svg class="w-8 h-8 text-gray-500"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -76,7 +83,7 @@
             </div>
             <div class="flex flex-col items-center gap-y-12 mb-8">
                 <button>
-                    <svg class="h-8 w-8 text-gray-500" width="24" height="24"
+                    <svg class="nav_icon" width="24" height="24"
                         viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" fill="none" stroke-linecap="round"
                         stroke-linejoin="round"> <path stroke="none"
@@ -95,10 +102,14 @@
         </section>
         <!-- Main section -->
         <main class="flex-grow flex flex-col">
-            <nav class="mt-2 flex justify-end pr-4">
-                <div class="flex items-center justify-end gap-x-10 ml-12">
+            <nav class="mt-2 flex justify-end sm:justify-normal pr-4 sm:pr-10">
+                <div class="flex items-center justify-end gap-x-10 ml-12 sm:ml-8 sm:grid sm:grid-cols-6 sm:w-full">
+                    <div class="hidden sm:block sm:col-span-1">
+                        <svg class="nav_icon"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="4" y1="6" x2="20" y2="6" />  <line x1="4" y1="12" x2="20" y2="12" />  <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                    </div>
                     <div
-                        class="flex  items-center gap-x-6 border border-gray-300 h-full rounded-lg pl-4">
+                        class="flex  items-center gap-x-6 border border-gray-300 h-full rounded-lg pl-4 sm:col-span-4">
                         <svg class="h-10 w-10 text-gray-500" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -108,9 +119,9 @@
                         <input type="search" placeholder="Search"
                             class="w-full text-xl outline-none bg-slate-100">
                     </div>
-                    <div class="flex-none w-14 h-14">
+                    <div class="flex-none sm:col-span-1 sm:flex sm:justify-end">
                         <img src="src/images/admin_profile.jpg" alt
-                            class="rounded-full truncate">
+                            class="rounded-full  w-14 h-14 truncate">
                     </div>
                 </div>
             </nav>
@@ -131,7 +142,7 @@
                         </div>
                         <h1 class="font-bold text-3xl">Dashboard</h1>
                     </div>
-                    <div class="grid mt-14 gap-4">
+                    <div class="grid mt-14 gap-4 sm:grid-cols-2 md:grid-cols-3">
                         <div
                             class="bg-blue-400 flex flex-col py-6 justify-center items-center rounded-xl">
                             <svg class="h-8 w-8 text-black"

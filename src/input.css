@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav_icon_link:hover, .nav_icon_link svg:hover{
+    @apply hover:text-blue-500;
+}
+.nav_icon_link{
+    @apply flex items-center;
+}
+.nav_icon{
+    @apply  h-8 w-8 text-gray-500 mb-2;
+}
